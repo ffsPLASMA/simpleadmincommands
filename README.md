@@ -10,6 +10,8 @@ Simple Admin Commands adds the possibility to administrate your server either vi
 
 Available commands:
 
+/adminhelp - Show all commands available
+
 /slap - Slap a player
 
 /mute - Mute a player
@@ -20,20 +22,17 @@ Available commands:
 
 /bring - Bring another player to you (ingame only)
 
-/tp - Teleport one player to another (ingame only)
+/tp - Teleport one player to another
 
 /kick - Kick a player
 
 /ban - Ban a player
 
 
-To view a detailed explanation of the commands, either write "adminhelp" in server console or the corresponding command in ingame chat.
-
-
 === Installation ===
 
 The system is split into 3 different groups. Admins, Supermoderators and Moderators.
 
-To add a player to one of these groups, open permissions.lua file and add steam ID to one of the groups.
+To add a player to one of these groups, open config.lua file, add the player steam ID and set his group
 
-To change a permission level of a command, edit the tblCommandPermissions table and change it to the corresponding group.
+To change a permission level of a command, edit the tblCommands table and change it to the corresponding group.
